@@ -1,0 +1,94 @@
+body {
+    
+    background-color: rgba(36,36,37);
+    color:  rgba(244,244,244);
+    margin: 0 auto;
+   
+}
+
+.container {
+    /* border: 3px solid red; */
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(244,244,244);
+}
+
+
+.navbar {
+    /* border: 3px solid yellow; */
+    display: flex;
+    width: 20rem;
+    list-style-type: none;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.current{
+    
+}
+
+.navbar a {
+    text-decoration: none;
+    color:  rgba(244,244,244);
+}
+
+.fa-send-o{
+    display: flex;
+    width: 2rem;
+    padding: 14px;
+    /* border: 3px solid yellow; */
+	color:  rgba(244,244,244);
+}
+
+.mainContainer {
+    /* border:3px solid yellow; */
+    margin: 10px auto;
+    width: 80%;
+    
+
+}
+header{
+    /* border: 3px solid red; */
+    border-bottom: 1px solid rgba(244,244,244);
+}
+
+#headShot {
+    width: 25%;
+    padding: 20px 30px;
+}
+
+.aboutContainer {
+    /* border: 3px solid blue; */
+    display: flex;
+    justify-content: space-between;
+}
+
+#aboutParContainer {
+    /* border: 3px solid white; */
+    /* margin: 0 auto; */
+}
+
+#aboutPar {
+    width: 50%;
+}
+
+footer {
+    /* border: 3px solid red; */
+    position:fixed ; 
+    bottom: 10px;
+    width: 100%;
+    
+    /* border-top: 1px solid rgba(244,244,244); */
+    /* margin: 0 auto; */
+}
+
+#footer {
+    /* border: 3px solid blue; */
+    width: 90%;
+    border-top: 1px solid rgba(244,244,244);
+    margin: 0 auto;
+    
+
+};
