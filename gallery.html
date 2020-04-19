@@ -1,5 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Matthew Howard</title>
+    <link rel="stylesheet" href="public/style.css">
+    <script src="https://kit.fontawesome.com/5b58a307d0.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js"></script>
+   
+    <script id='templateHB' type='text/x-handlebars-template'>
+      {{#each hikes}}
+      <article class="hike">
+        <img class="image" src="{{this.image}}" alt="{{this.name}}">
+          <section class="details">
+            <h2 class="name">{{this.name}}</h2>
+            <p class="description">{{this.description}}</p>
+
+          </section>
+    </article>
+      {{/each}}
+</script>
+
+  </head>
+
+  <body>
+    <header>
+        <section class="container">
+            <nav>
+                <ul class='navbar'>
+                    <li>
+                        <a href="index.html"><i class="fas fa-caravan" style="font-size:16px"></i></a>
+                    </li>
+                    <li>
+                        <a href="portfolio.html"><i class="fas fa-code-branch"></i></a>
+                    </li>
+                    <li class='current'>
+                        <a href="gallery.html"><i class="fas fa-hiking" style="font-size:16px"></i></a>
+                    </li>
+                    <li>
+                        <a href="http://www.youtube.com/c/TallJoeHikes">Youtube</a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/talljoehikes/">Instagram</a>
+                    </li>
+                </ul>
+            </nav>
+                <div id='email'>
+                        <a href="mailto:mattalanhoward@gmail.com?Subject=Hello" target="_top"><i class="fa fa-send-o" style="font-size:16px"></i></a>
+                </div>
+          </section>
+    </header>
+<!-- 
+    populates handlebars template -->
+    <article id="showcase">
+      <section class="container" id='information'>
+        
+      </section>
+    </article>
+
+    <script src="public/main.js"></script>
+  </body>
+</html>
+
+
+
+<!-- 
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +75,6 @@
     <title>Matthew Howard</title>
 </head>
 <body>
-    <body>
         <section class="container">
             <nav>
                 <ul class='navbar'>
@@ -34,4 +100,4 @@
                 </div>
           </section>
 </body>
-</html>
+</html> -->
