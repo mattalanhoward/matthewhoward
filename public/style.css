@@ -26,9 +26,9 @@ body {
     justify-content: space-between;
 }
 
-.current{
+/* .current{
     
-}
+} */
 
 .navbar a {
     text-decoration: none;
@@ -66,10 +66,10 @@ header{
     justify-content: space-between;
 }
 
-#aboutParContainer {
-    /* border: 3px solid white; */
-    /* margin: 0 auto; */
-}
+/* #aboutParContainer {
+    border: 3px solid white; 
+    margin: 0 auto;
+} */
 
 #aboutPar {
     width: 50%;
