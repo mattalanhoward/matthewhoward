@@ -1,8 +1,9 @@
 body {
     
-    background-color: rgba(36,36,37);
-    color:  rgba(244,244,244);
+    background-color: rgba(255,255,255);
+    color:  rgba(51,51,51);
     margin: 0 auto;
+    /* background: url(../images/PCT/IMG_1066.jpeg) no-repeat center center fixed; */
    
 }
 
@@ -12,7 +13,7 @@ body {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid rgba(244,244,244);
+    border-bottom: 1px solid rgba(51,51,51);
 }
 
 
@@ -31,7 +32,7 @@ body {
 
 .navbar a {
     text-decoration: none;
-    color:  rgba(244,244,244);
+    color:  rgba(51,51,51);
 }
 
 .fa-send-o{
@@ -39,19 +40,19 @@ body {
     width: 2rem;
     padding: 14px;
     /* border: 3px solid yellow; */
-	color:  rgba(244,244,244);
+	color:  rgba(51,51,51);
 }
 
 .mainContainer {
     /* border:3px solid yellow; */
     margin: 10px auto;
-    width: 80%;
+    width: 90%;
     
 
 }
 header{
     /* border: 3px solid red; */
-    border-bottom: 1px solid rgba(244,244,244);
+    border-bottom: 1px solid rgba(51,51,51);
 }
 
 #headShot {
@@ -87,7 +88,7 @@ footer {
 #footer {
     /* border: 3px solid blue; */
     width: 90%;
-    border-top: 1px solid rgba(244,244,244);
+    border-top: 1px solid rgba(51,51,51);
     margin: 0 auto;
     
 
