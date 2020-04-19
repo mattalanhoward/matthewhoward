@@ -13,8 +13,10 @@
       {{#each hikes}}
       <article class="hike">
         <img class="image" src="{{this.image}}" alt="{{this.name}}">
+        <!-- <img class="image" src="{{this.image2}}" alt="{{this.name}}"> -->
           <section class="details">
             <h2 class="name">{{this.name}}</h2>
+            <p class= "year">Completed: {{this.year}}</p>
             <p class="description">{{this.description}}</p>
 
           </section>
@@ -51,7 +53,7 @@
                 </div>
           </section>
     </header>
-    <p>Favorite Hikes</p>
+    <h1>Favorite hikes from around the world</h1>
 <!-- populates handlebars template -->
     <article id="hikeContainer">
       <section class="container" id='information'>

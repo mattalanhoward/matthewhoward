@@ -92,27 +92,45 @@ footer {
     margin: 0 auto;
 }
 
-.image {
-    border: 3px solid red;
-    height: 200px;
-    width: auto;
-    display: inline-block;
-    vertical-align: middle;
-
-}
-
-.hike {
-    border: 3px solid green;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 #hikeContainer{
     border: 3px solid orange;
     margin: 0 auto;
     width: 90%;
 
 }
+
+.hike {
+    border: 3px solid green;
+    margin: 25px auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+}
+
+.image {
+    border: 3px solid red;
+    height: auto;
+    width: 60%;
+    display: inline-block;
+    vertical-align: middle;
+
+}
+
+.details {
+    border: 3px solid blue;
+    width: 60%;
+    margin: 15px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
 
 
