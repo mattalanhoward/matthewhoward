@@ -41,7 +41,7 @@ nav {
 }
 
 .mainContainer {
-    border:3px solid yellow;
+    /* border:3px solid yellow; */
     margin: 10px auto;
     width: 70%;
 }
@@ -161,7 +161,7 @@ table{
 
 @media screen and (max-width: 1000px) {
     .aboutContainer {
-        border: 3px solid orange;
+        /* border: 3px solid orange; */
         display: flex;
         flex-direction: column-reverse;
     }
