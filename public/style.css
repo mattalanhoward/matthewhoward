@@ -27,10 +27,10 @@ nav {
     color:  rgba(51,51,51);
     display: flex;
     width: 20rem;
+    /* text-decoration: none; */
     align-items: center;
     justify-content: space-between;
 }
-
 
 .fa-send-o{
     display: flex;
@@ -41,7 +41,7 @@ nav {
 }
 
 .mainContainer {
-    /* border:3px solid yellow; */
+    border:3px solid yellow;
     margin: 10px auto;
     width: 70%;
 }
@@ -62,7 +62,6 @@ header{
     width: auto;
     height: 400px;
     margin: auto;
-
 }
 
 .aboutContainer {
@@ -70,6 +69,7 @@ header{
     margin-top: 80px;
     display: flex;
 }
+
 
 #aboutParContainer {
     /* border: 3px solid red; */
@@ -157,4 +157,18 @@ table{
     /* border: 3px solid orange; */
     width: 100%;
     text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+    .aboutContainer {
+        border: 3px solid orange;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #headShot {
+        /* border: 3px solid green; */
+        width: 100%;
+        height: auto;
+        margin: auto;
+    }
 }
