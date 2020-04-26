@@ -148,7 +148,13 @@ h2 {
 
 table{
     border: 3px solid rgba(51,51,51);
-    margin: 0 auto;
+    margin: 20px auto;
     width: 60%;
+    text-align: left;
 }
 
+#stats{
+    /* border: 3px solid orange; */
+    width: 100%;
+    text-align: center;
+}
