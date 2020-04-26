@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/style.css">
+    <script src="https://kit.fontawesome.com/5b58a307d0.js" crossorigin="anonymous"></script>
+    <title>Matthew Howard</title>
+    
+</head>
+<body>
+    <section class="navContainer">
+        <nav>
+            <a href="index.html"><i class="fas fa-caravan" style="font-size:16px"></i></a>
+            <a href="portfolio.html"><i class="fas fa-project-diagram" style="font-size:14px"></i></a>
+            <a href="gallery.html"><i class="fas fa-hiking" style="font-size:16px"></i></a>
+            <a href="https://github.com/mattalanhoward"><i class="fab fa-github" style= "font-size:16px"></i></a>
+            <a href="http://www.youtube.com/c/TallJoeHikes"><i class="fab fa-youtube" style= "font-size:16px"></i></a>
+            <a href="https://www.instagram.com/talljoehikes/"><i class="fab fa-instagram" style= "font-size:16px"></i></a>
+        </nav>
+            <div id='email'>
+                    <a href="mailto:mattalanhoward@gmail.com?Subject=Hello" target="_top"><i class="fa fa-send-o" style="font-size:16px"></i></a>
+            </div>
+      </section>
+      
+        <header>
+          <h1>Statistics</h1>
+        </header>
+
+
+        <table id="myTable">
+            <tr>
+            <!--When a header is clicked, run the sortTable function, with a parameter,
+            0 for sorting by names, 1 for sorting by location, 2 for sorting by distance, 3 for sorting by days, 4 for sorting by year: -->
+            <th onclick="sortTable(0)">Name</th>
+            <th onclick="sortTable(1)">Location</th>
+            <th onclick='sortTable(2)'>Distance in miles</th>
+            <th onclick='sortTable(3)'>Days Hiked</th>
+            <th onclick="sortTable(4)">Year Completed</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Appalachian Trail</td>
+                    <td>Eastern United States</td>
+                    <td>2182</td>
+                    <td>150</td>
+                    <td>2012</td>
+                </tr>
+                <tr>
+                    <td>Camino de Santiago</td>
+                    <td>Northern Spain</td>
+                    <td>500</td>
+                    <td>33</td>
+                    <td>2017</td>
+                </tr>                
+                <tr>
+                    <td>Pacific Crest Trail</td>
+                    <td>Western United States</td>
+                    <td>2650</td>
+                    <td>133</td>
+                    <td>2017</td>
+                </tr>
+                <tr>
+                    <td>Tour Du Mont Blanc</td>
+                    <td>Switzerland, France, Italy</td>
+                    <td>105</td>
+                    <td>5</td>
+                    <td>2019</td>
+                </tr>
+                <tr>
+                    <td>Linville Gorge Grand Loop</td>
+                    <td>North Carolina</td>
+                    <td>35</td>
+                    <td>3</td>
+                    <td>2016</td>
+                </tr>
+                <tr>
+                    <td>Virginia's Triple Crown</td>
+                    <td>Virginia</td>
+                    <td>35</td>
+                    <td>3</td>
+                    <td>2016</td>
+                </tr>
+                <tr>
+                    <td>The Long Trail</td>
+                    <td>Vermont</td>
+                    <td>273</td>
+                    <td>11</td>
+                    <td>DNF</td>
+                </tr>
+
+            </tbody>
+
+    </table>
+    
+        
+        <script>
+        function sortTable(n) {
+          var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+          table = document.getElementById("myTable");
+          switching = true;
+          // Set the sorting direction to ascending:
+          dir = "asc";
+          /* Make a loop that will continue until
+          no switching has been done: */
+          while (switching) {
+            // Start by saying: no switching is done:
+            switching = false;
+            rows = table.rows;
+            /* Loop through all table rows (except the
+            first, which contains table headers): */
+            for (i = 1; i < (rows.length - 1); i++) {
+              // Start by saying there should be no switching:
+              shouldSwitch = false;
+              /* Get the two elements you want to compare,
+              one from current row and one from the next: */
+              x = rows[i].getElementsByTagName("TD")[n];
+              y = rows[i + 1].getElementsByTagName("TD")[n];
+              /* Check if the two rows should switch place,
+              based on the direction, asc or desc: */
+              if (dir == "asc") {
+                if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+                  // If so, mark as a switch and break the loop:
+                  shouldSwitch = true;
+                  break;
+                }
+              } else if (dir == "desc") {
+                if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+                  // If so, mark as a switch and break the loop:
+                  shouldSwitch = true;
+                  break;
+                }
+              }
+            }
+            if (shouldSwitch) {
+              /* If a switch has been marked, make the switch
+              and mark that a switch has been done: */
+              rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+              switching = true;
+              // Each time a switch is done, increase this count by 1:
+              switchcount ++;
+            } else {
+              /* If no switching has been done AND the direction is "asc",
+              set the direction to "desc" and run the while loop again. */
+              if (switchcount == 0 && dir == "asc") {
+                dir = "desc";
+                switching = true;
+              }
+            }
+          }
+        }
+        </script>
+
+    
+
+
+    <footer>
+        <p id='footer'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea modi recusandae culpa architecto corporis, eius hic beatae quod sapiente, consequatur odit cumque debitis nostrum? Libero qui eum hic iure officia?</p>
+    </footer>
+</body>
+</html>

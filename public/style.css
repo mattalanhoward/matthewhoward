@@ -87,9 +87,10 @@ header{
 
 footer {
     /* border: 3px solid red; */
-    position:fixed ; 
+    /* position:fixed;  */
     bottom: 10px;
     width: 100%;
+    background-color: white;
     
     /* border-top: 1px solid rgba(244,244,244); */
     /* margin: 0 auto; */
@@ -99,7 +100,9 @@ footer {
     /* border: 3px solid blue; */
     width: 90%;
     border-top: 1px solid rgba(51,51,51);
-    margin: 0 auto;
+    margin: 100px auto;
+    margin-bottom: 0px;
+    height: auto;
 }
 
 #hikeContainer{
@@ -141,5 +144,11 @@ h1 {
 
 h2 {
     text-align: center;
+}
+
+table{
+    border: 3px solid rgba(51,51,51);
+    margin: 0 auto;
+    width: 60%;
 }
 
