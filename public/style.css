@@ -49,9 +49,8 @@ header{
     /* border: 3px solid red;  */
     background-color: whitesmoke;
     width: 100%;
-    height: auto;
     margin: 15px 0;
-    padding: 10px;
+    padding: 12px auto;
     /* display: flex;
     justify-content: center; */
 }
@@ -105,14 +104,14 @@ footer {
 }
 
 #hikeContainer{
-    border: 3px solid orange;
+    /* border: 3px solid orange; */
     margin: 0 auto;
     width: 90%;
 
 }
 
 .hike {
-    border: 3px solid green;
+    /* border: 3px solid green; */
     margin: 25px auto;
     display: flex;
     justify-content: center;
@@ -122,7 +121,7 @@ footer {
 }
 
 .image {
-    border: 3px solid red;
+    /* border: 3px solid red; */
     height: auto;
     width: 60%;
     display: inline-block;
@@ -158,31 +157,18 @@ table{
     text-align: center;
 }
 
-.projects {
-    border: 3px solid red;
-    width: 90%;
-    margin: 0 auto;
-    
-}
 #projectList {
-    border: 3px solid orange;
-    width: 90%;
+    /* border: 3px solid orange; */
     margin: 0 auto;
     list-style-type: none;
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
-#projectList a {
-    border: 3px solid blue;
+    justify-content: space-between;
+    width: 90%;
 }
 
 #projectList a img {
     /* border: 3px solid yellow; */
     width: 75%;
-    height: auto;
-    margin:0 auto;
 }
 
 
