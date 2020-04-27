@@ -1,11 +1,8 @@
 body {
-    
     background-color: rgba(255,255,255);
     color:  rgba(51,51,51);
     margin: 0 auto;
     height: 100%;
-    display: flex;
-    flex-direction: column;
     /* background: url(../images/PCT/IMG_1066.jpeg) no-repeat center center fixed; */
    
 }
@@ -17,6 +14,7 @@ body {
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid rgba(51,51,51);
+    text-decoration: none;
 } 
 
 a:visited {
@@ -42,51 +40,46 @@ nav {
 	color:  rgba(51,51,51);
 }
 
-.mainContainer {
-    /* border:3px solid yellow; */
-    margin: 10px auto;
-    width: 70%;
-}
-
 header{
     /* border: 3px solid red;  */
     background-color: whitesmoke;
     width: 100%;
+    height: 100px;
     margin: 15px 0;
     padding: 12px auto;
-    /* display: flex;
-    justify-content: center; */
+    display: flex;
+    justify-content: center;
+}
+
+.main {
+    /* border:3px solid yellow; */
+    margin: 10px auto;
+    width: 80%;
+    display: flex;
+    min-height: calc(100vh - 250px);
 }
 
 #headShot {
     /* border: 3px solid green; */
-    width: auto;
     height: 400px;
+    width: auto;
     margin: auto;
+    padding: 10%;
 }
 
-.aboutContainer {
-    /* border: 3px solid blue; */
-    margin-top: 80px;
-    display: flex;
-}
-
-
-#aboutParContainer {
+#about {
     /* border: 3px solid red; */
     padding: 10px 80px 10px 10px;
     margin: auto;
-    
-}
-
-
+} 
 
 footer {
     width: 90%;
     border-top: 1px solid rgba(51,51,51);
-    bottom: 0px;
+    /* bottom: 0px; */
     margin: 10px auto;
-}
+    /* position: relative; */
+} 
 
 
 #hikeContainer{
@@ -149,24 +142,24 @@ table{
     list-style-type: none;
     display: flex;
     justify-content: space-between;
-    width: 90%;
+    width: 100%;
 }
 
 #projectList a img {
     /* border: 3px solid yellow; */
-    width: 75%;
+    width: 90%;
 }
 
 
 @media screen and (max-width: 1000px) {
-    .aboutContainer {
+    .main {
         /* border: 3px solid orange; */
         display: flex;
         flex-direction: column-reverse;
     }
     #headShot {
         /* border: 3px solid green; */
-        width: 100%;
+        width: 80%;
         height: auto;
         margin: auto;
     }
