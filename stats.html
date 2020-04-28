@@ -31,7 +31,7 @@
           <h1>Statistics</h1>
         </header>
 
-        <div class='main'>
+      <div class='main'>
           <div id='stats'>
             <a href="gallery.html">Back to Gallery</a>
           </div>
@@ -52,66 +52,71 @@
                 <tr>
                     <td>Appalachian Trail</td>
                     <td>Eastern United States</td>
-                    <td>2182</td>
-                    <td>150</td>
+                    <td id='num'>2182</td>
+                    <td id='num'>150</td>
                     <td>2012</td>
                 </tr>
                 <tr>
                     <td>Camino de Santiago</td>
                     <td>Northern Spain</td>
-                    <td>500</td>
-                    <td>33</td>
+                    <td id='num'>500</td>
+                    <td id='num'>33</td>
                     <td>2017</td>
                 </tr>                
                 <tr>
                     <td>Pacific Crest Trail</td>
                     <td>Western United States</td>
-                    <td>2650</td>
-                    <td>133</td>
+                    <td id='num'>2650</td>
+                    <td id='num'>133</td>
                     <td>2017</td>
                 </tr>
                 <tr>
                     <td>Tour Du Mont Blanc</td>
                     <td>Switzerland, France, Italy</td>
-                    <td>105</td>
-                    <td>5</td>
+                    <td id='num'>105</td>
+                    <td id='num'>5</td>
                     <td>2019</td>
                 </tr>
                 <tr>
                     <td>Linville Gorge Grand Loop</td>
                     <td>North Carolina</td>
-                    <td>35</td>
-                    <td>3</td>
+                    <td id='num'>35</td>
+                    <td id='num'>3</td>
                     <td>2016</td>
                 </tr>
                 <tr>
                     <td>Virginia's Triple Crown</td>
                     <td>Virginia</td>
-                    <td>35</td>
-                    <td>3</td>
+                    <td id='num'>35</td>
+                    <td id='num'>3</td>
                     <td>2016</td>
                 </tr>
                 <tr>
                     <td>The Long Trail</td>
                     <td>Vermont</td>
-                    <td>273</td>
-                    <td>11</td>
+                    <td id='num'>273</td>
+                    <td id='num'>11</td>
                     <td>DNF</td>
                 </tr>
 
             </tbody>
 
-    </table>
+        </table>
 
     <div id='buttonContainer' style='margin: 0 auto;'>
       <button type="button" class="btn btn-primary" onclick='sortTable(0)'>Sort by Name
       </button>
       <button type="button" class="btn btn-primary" onclick='sortTable(1)'>Sort by Location
       </button>
+      <button type="button" class="btn btn-primary" onclick='sortTable(2)'>Sort by Length
+      </button>
+      <button type="button" class="btn btn-primary" onclick='sortTable(3)'>Sort by Days
+      </button>
       <button type="button" class="btn btn-primary" onclick='sortTable(4)'>Sort by Year
       </button>
     </div>
-        </div>
+      </div>
+
 
         <script>
         function sortTable(n) {

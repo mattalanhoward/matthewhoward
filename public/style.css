@@ -5,6 +5,10 @@ body {
     height: 100%;
 }
 
+a {
+    color: rgba(51,51,51);
+}
+
 .navContainer {
     /* border: 3px solid red; */
     width: 90%;
