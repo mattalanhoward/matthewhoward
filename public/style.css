@@ -49,11 +49,20 @@ header{
     justify-content: center;
 }
 
+.aboutContainer {
+    margin: 10px auto;
+    width: 80%;
+    display: flex;
+    min-height: calc(100vh - 250px);
+
+}
+
 .main {
     /* border:3px solid yellow; */
     margin: 10px auto;
     width: 80%;
     display: flex;
+    flex-direction: column;
     min-height: calc(100vh - 250px);
 }
 
