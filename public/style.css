@@ -3,6 +3,7 @@ body {
     color:  rgba(51,51,51);
     margin: 0 auto;
     height: 100%;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 a {
@@ -51,6 +52,10 @@ header{
     padding: 12px auto;
     display: flex;
     justify-content: center;
+}
+
+span {
+    font-size: 22px;
 }
 
 .aboutContainer {
@@ -163,16 +168,22 @@ table{
 }
 
 @media screen and (max-width: 1000px) {
-    .main {
+    
+    .main .aboutContainer{
         /* border: 3px solid orange; */
         display: flex;
         flex-direction: column-reverse;
+        width: 80%;
     }
     #headShot {
         /* border: 3px solid green; */
-        width: 80%;
+        width: 90%;
         height: auto;
         margin: auto;
+    }
+
+    #about {
+        width:95%;
     }
     .fa-send-o{
         font-size: 12px;
@@ -182,5 +193,18 @@ table{
     }
     nav {
         width:15rem;
+    }
+
+    #projectList {
+        /* border: 3px solid orange; */
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    table{
+        border: 1px solid rgba(51,51,51);
+        margin: 0 auto;
+        width: 60%;
+        text-align: left;
     }
 }
