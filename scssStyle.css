@@ -1,0 +1,29 @@
+/*add mix ins */
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#myTable {
+  background-color: rgba(135, 129, 221, 0.295);
+}
+
+#myTable #num {
+  background-color: rgba(135, 129, 221, 0.295);
+}
+
+#myTable #num:hover {
+  background-color: red;
+}
+
+body {
+  color: #333333;
+}
+/*# sourceMappingURL=scssStyle.css.map */

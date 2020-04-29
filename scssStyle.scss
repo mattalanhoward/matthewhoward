@@ -2,6 +2,17 @@ $table: rgba(135, 129, 221, 0.295);
 $textColor: rgb(51,51,51);
 $numbers: red;
 
+/*add mix ins */
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+@include    flexCenter();
+}
+
 #myTable {
     background-color: $table;
     #num {
