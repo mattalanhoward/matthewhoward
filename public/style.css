@@ -87,11 +87,11 @@ span {
     padding: 3px;
 }
 
-#buttonContainer {
+/* #buttonContainer {
     margin:15px auto;
     display: flex;
     justify-content: space-between;
-}
+} */
 
 #headShot {
     /* border: 3px solid green; */
