@@ -75,6 +75,24 @@ span {
     min-height: calc(100vh - 250px);
 }
 
+#mainTable {
+    margin: 10px auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 250px);
+}
+
+#myTable {
+    padding: 3px;
+}
+
+#buttonContainer {
+    margin:15px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
 #headShot {
     /* border: 3px solid green; */
     height: 400px;
@@ -173,7 +191,6 @@ table{
         /* border: 3px solid orange; */
         display: flex;
         flex-direction: column-reverse;
-        width: 80%;
     }
     #headShot {
         /* border: 3px solid green; */
@@ -200,11 +217,30 @@ table{
         display: flex;
         flex-direction: column;
         width: 100%;
+        justify-content: center;
     }
     table{
         border: 1px solid rgba(51,51,51);
         margin: 0 auto;
         width: 60%;
-        text-align: left;
+    }
+
+    ul{
+        padding: 0;
+    }
+
+    #projectList a img{
+        border: 3px solid yellow;
+        width: 100%;
+    }
+
+    .image {
+        width: 100%;
+    }
+
+    #mainTable{
+        display: table;
+        margin: 0 auto;
+        padding: 5px;
     }
 }
