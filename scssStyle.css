@@ -1,5 +1,5 @@
 /*add mix ins */
-header {
+header, .listContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -9,6 +9,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: whitesmoke;
 }
 
 #myTable {
@@ -21,6 +22,11 @@ header {
 
 #myTable #num:hover {
   background-color: red;
+}
+
+.simpleList {
+  list-style-type: upper-roman;
+  text-align: center;
 }
 
 body {
