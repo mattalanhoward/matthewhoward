@@ -10,6 +10,9 @@ $background: background-color;
     background-color: $background;
 }
 
+body {
+    color: $textColor;
+}
 
 header {
 @include flexCenter(rgb(245,245,245));
@@ -36,7 +39,5 @@ header {
 }
 
 
-body {
-    color: $textColor;
-}
+
 

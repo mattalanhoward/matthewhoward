@@ -32,4 +32,20 @@ header, .listContainer {
 body {
   color: #333333;
 }
+
+#projectList{
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width:80vh;
+  align-items: center;
+
+}
+
+#projectList li, #projectList img{
+  margin: 30px;
+  width: 500px;
+  height: auto;
+}
 /*# sourceMappingURL=scssStyle.css.map */
